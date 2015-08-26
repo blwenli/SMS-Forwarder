@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout 
+    android:id="@+id/DoorLockLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_above="@+id/ButtonLayout">
+    
+    <ImageView
+        android:id="@+id/LockLogo"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/phone"/>
+    
+    <TextView
+        android:id="@+id/DebugText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="5dip"
+        android:text="PhoneStateListener v1.0" />
+    
+    </LinearLayout>
+
+    <LinearLayout 
+    android:id="@+id/ButtonLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal">
+    
+    <Button
+        android:id="@+id/SettingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:background="@color/lightgreen"
+        android:text="Setting" />
+        
+    <Button
+        android:id="@+id/ExitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:background="@color/lightblue"
+        android:text="Exit" />
+    
+    </LinearLayout>
+</RelativeLayout>

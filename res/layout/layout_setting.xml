@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<EditText android:layout_height="wrap_content" android:hint="发件邮箱"
+		android:layout_width="match_parent" android:id="@+id/userid"></EditText>
+	<EditText android:layout_height="wrap_content" android:hint="邮箱密码" android:inputType="textPassword"
+		android:layout_width="match_parent" android:id="@+id/password"></EditText>
+	<EditText android:layout_height="wrap_content" android:hint="邮箱服务器"
+		android:layout_width="match_parent" android:id="@+id/serverhost"></EditText>
+	<EditText android:layout_height="wrap_content" android:hint="服务器端口"
+		android:layout_width="match_parent" android:id="@+id/serverport"></EditText>
+	<EditText android:layout_height="wrap_content" android:hint="邮箱账号"
+		android:layout_width="match_parent" android:id="@+id/from"></EditText>
+	<EditText android:layout_height="wrap_content" android:hint="收件邮箱"
+		android:layout_width="match_parent" android:id="@+id/to"></EditText>
+	<EditText android:layout_height="wrap_content" android:hint="邮件主题"
+		android:layout_width="match_parent" android:id="@+id/subject"></EditText>
+	<EditText android:layout_height="wrap_content" android:hint="邮件内容"
+		android:layout_width="match_parent" android:id="@+id/body"></EditText>
+	<Button android:text="save" android:id="@+id/save"
+		android:layout_width="match_parent" android:layout_height="wrap_content"></Button>
+</LinearLayout>
